@@ -5,7 +5,7 @@ from torch.nn import Conv2d, MaxPool2d, Flatten, Linear, Sequential
 class Tudui(nn.Module):                       #设计类
     def __init__(self):                       #定义构造函数
         super(Tudui, self).__init__()         #调用父类的构造函数
-        self.model1 = Sequential(             #实例化Sequential 类，按顺序组合下列多个神经网络层。    
+        self.model1 = Sequential(             #实例化Sequential 类，按顺序组合下列多个神经网络层   
             Conv2d(3, 32, 5, padding=2),      #设计的卷积层，包括其中的各个参数
             MaxPool2d(2),                     #池化层
             Conv2d(32, 32, 5, padding=2),     #第二个卷积层
