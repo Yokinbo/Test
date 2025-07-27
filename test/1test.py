@@ -6,7 +6,7 @@ class Child(Parent):
     def __init__(self):
         super().__init__()  # 👈 调用父类构造函数
         print("Child 初始化")
-
+#jishdcilwbjesc
 c = Child()
 """
 import torch.nn as nn
